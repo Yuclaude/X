@@ -3,7 +3,7 @@
  * 负责主线打卡以及在各个任务中心（Market）完成日常的点击、浏览任务领取云朵
  */
 const SIGN_ENDPOINTS = {
-    status: "https://caiyun.feixin.10086.cn/market/signin/page/info?client=app",
+    status: "https://m.mcloud.139.com/market/signin/page/startSignIn?client=app",
     action: "https://caiyun.feixin.10086.cn/market/manager/commonMarketconfig/getByMarketRuleName?marketName=sign_in_3",
     taskList: (marketName) => `https://caiyun.feixin.10086.cn/market/signin/task/taskList?marketname=${marketName}`,
     taskClick: (taskId) => `https://caiyun.feixin.10086.cn/market/signin/task/click?key=task&id=${taskId}`,
